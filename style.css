@@ -775,7 +775,6 @@ h1, h2, h3 {
 .team__gallery-item--active {
   display: inline-block;
   position: relative;
-  width: 300px;
   border-radius: 20px;
   margin: 0 15px 0 0;
   background-image: url(image/photo.jpg);
@@ -1575,6 +1574,7 @@ h1, h2, h3 {
     padding-top: 20px;
     align-items: center;
     justify-content: space-between;
+    border: none;
   }
 
   .mint-block__total-container img {
@@ -1646,6 +1646,220 @@ h1, h2, h3 {
   .mint-block__opensea {
     order: 3;
     margin: 45px 30px 0 50px;
+  }
+
+  .mint-block__footer {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: -20px;
+    z-index: -1;
+  }
+
+  .mint-block__footer-container {
+    box-sizing: border-box;
+    min-height: 200px;
+    border-bottom: 43px solid transparent;
+    border-image: url(image/national-border.png) 43 repeat;
+    background-color: rgb(247, 38, 38);
+    padding: 20px 30px 0;
+  }
+
+  .mint-block__connect-wallet-button {
+    margin: 30px auto;
+    height: 64px;
+  }
+
+  .mint-block__quantity {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 30px 0 0;
+  }
+
+  .mint-block__quantity-counter {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+  }
+
+  .mint-block__mint-button {
+    height: 64px;
+    margin: 0 0 0 auto;
+    width: 191px;
+  }
+
+  .mint-block__counter-button {
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+
+  .mint-block__counter-button--minus {
+    margin-left: 30px;
+  }
+
+  .mint-block__counter-button--plus {
+    margin-right: 30px;
+  }
+
+  .mint-block__counter-value {
+    width: 60px;
+  }
+
+  .mint-block__loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 42px;
+  }
+
+  .mint-block__loader {
+    margin-right: 30px;
+  }
+
+  .mint-block__loading-span {
+    font-size: 25px;
+  }
+
+  .mint-block__complete {
+    padding: 42px 0;
+  }
+
+  .mint-block__transaction {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  
+  .mint-block__thanks {
+    font-size: 25px;
+    margin: 0 0 10px;
+    text-align: left;
+  }
+
+  .mint-block__thanks-container {
+    text-align: left;
+    padding: 0 0 20px 0;
+  }
+
+  .mint-block__thanks-transaction {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .mint-block__transaction-code {
+    background-color: rgb(244, 244, 244);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    line-height: 0;
+    padding: 8px;
+    margin: 0 10px;
+  }
+
+  .mint-block__see-on {
+    width: 210px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 auto;
+  }
+
+  .mint-block__see-on img {
+    margin-left: 15px;
+  }
+
+  .mint-block__comment {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+
+  .mint-block__comment-album {
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    margin-right: 30px;
+  }
+
+  .mint-block__comment-nft {
+    display: flex;
+    align-items: center;
+  }
+
+  .mint-block__nft-title {
+    width: 350px;
+    font-size: 25px;
+    text-align: left;
+    line-height: 30px;
+  }
+
+  .mint-block__nft-title span {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .mint-block__comment-leave {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mint-block__comment-leave p {
+    font-size: 15px;
+    width: 250px;
+  }
+
+  .mint-block__comment-button {
+    margin: 0 0 10px 0;
+    width: 305px;
+    height: 64px;
+  }
+
+  .mint-block__social {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .mint-block__social p {
+    max-width: 600px;
+    text-align: left;
+  }
+
+  .mint-block__social-link {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    margin-left: 30px;
+    padding: 5px 0 0;
+  }
+
+  .mint-block__social-link img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .mint-block--open-footer {
+    margin-bottom: 100px;
   }
 
   /* audience */
@@ -1896,6 +2110,283 @@ h1, h2, h3 {
     display: none;
   }
 
+  /* popups */
+  .popups {
+    background-color: rgb(65, 171, 225);
+    padding: 20px;
+    margin-bottom: 120px;
+  }
+
+  .popup-container {
+    padding: 50px;
+    background-color: rgb(243, 244, 246);
+    border-radius: 20px;
+    width: fit-content;
+    margin-bottom: 50px;
+  }
+
+  .popup__member-card-container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 50px;
+    margin: 40px;
+  }
+
+  .popup__team-member {
+    height: 500px;
+    width: 393px;
+    position: relative;
+    border-radius: 20px;
+    background-image: url(image/photo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+  }
+
+  .popup__member-name {
+    position: absolute;
+    left: 20px;
+    bottom: 45px;
+    margin: 0;
+    font-size: 25px;
+    line-height: 40px;
+  }
+  
+  .popup__member-position {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+  }
+
+  .popup__member-social {
+    position: absolute;
+    right: 20px;
+    bottom: 28px;
+    width: 50px;
+    height: 50px;
+    padding: 5px 0 0;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(247, 38, 38);
+  }
+
+  .popup__member-card {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .popup__member-photo-container {
+    margin-right: 50px;
+  }
+
+  .popup__member-photo-container .popup__team-member {
+    margin-bottom: 20px;
+  }
+
+  .popup__member-social-button {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 1px solid rgb(122, 122, 122);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .popup__member-social-button img {
+    margin-right: 20px;
+  }
+
+  .popup__member-profile {
+    max-width: 620px;
+  }
+
+  .popup__member-title {
+    position: relative;
+    text-align: left;
+    margin: 0 0 30px 0;
+    width: 100%;
+  }
+
+  .popup__member-card-name {
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 900;
+    display: block;
+    margin: 0 0 5px 0;
+    text-align: left;
+  }
+
+  .popup__member-card-role {
+    color: rgb(34, 34, 34);
+  }
+
+  .popup__member-close-button,
+  .popup__member-inst-button {
+    position: absolute;
+    top: 17px;
+    right: 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    background: none;
+    width: 50px;
+    height: 50px;
+    padding: 5px 0 0;
+  }
+
+  .popup__member-close-button span {
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 18px;
+    background-color: rgb(34, 34, 34);
+    left: 48%;
+    top: 16px;
+  }
+
+  .popup__member-close-button span:first-child {
+    transform: rotate(45deg);
+  }
+
+  .popup__member-close-button span:last-child {
+    transform: rotate(-45deg);
+  }
+
+  .popup__member-info {
+    position: relative;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    padding-left: 23px;
+    text-align: left;
+  }
+
+  .popup__member-info:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    border-radius: 1.5px;
+    background-color: rgb(247, 38, 38);
+  }
+
+  .popup__member-video {
+    width: 620px;
+    height: 360px;
+    position: relative;
+    border-radius: 20px;
+    background-image: url(image/photo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .popup__play-button {
+    position: absolute; 
+    top: 138px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    background: none;
+  }
+
+  .popup__play-button img {
+    width: 83.56px;
+    height: 83.56px;
+  }
+
+  .popup-msg {
+    width: 512px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 50px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .popup-msg__header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  .popup-msg__header span {
+    font-size: 15px;
+    margin-right: 20px;
+  }
+
+  .popup-msg__header span:last-child {
+    margin-right: 0;
+  }
+
+  .popup-msg__header > img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+  }
+
+  .popup-msg__text {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .popup-msg__code {
+    font-size: 13px;
+    background-color: rgb(244, 244, 244);
+    padding: 8px;
+    border-radius: 10px;
+  }
+
+  .popup-msg__link {
+    border: none;
+    background: none;
+    width: 20px;
+    height: 20px;
+  }
+
+  .popup-msg__date {
+    margin-left: auto;
+  }
+
+  .popup-msg__footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .popup-msg__footer-row {
+    height: 32px;
+    margin-bottom: 8px;
+  }
+
+  .popup-msg__bordered-span {
+    display: inline-block;
+    background-color: rgb(244, 244, 244);
+    padding: 8px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+
+  /* footer */
   .footer {
     flex-direction: row;
     flex-wrap: wrap;
